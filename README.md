@@ -20,7 +20,7 @@
 SlideDial was built for the **CMF Buds Pro 2**: the charging case has a lovely Smart Dial that, on a Mac, does nothing more than change the volume. SlideDial captures the dial's rotation and presses and routes them to whatever you are actually doing. Any Bluetooth device that sends absolute volume and media-key commands should work the same way.
 
 <p align="center">
-  <img src="assets/device.svg" width="380" alt="CMF Buds Pro 2 case with its Smart Dial">
+  <img src="https://cdn.sanity.io/images/gtd4w1cq/production/fe6413d5864bf0dc342d4d2d4923fd20a3fe7b19-4000x4000.webp?auto=format&w=1000" width="420" alt="The Smart Dial on the CMF Buds Pro 2 charging case">
 </p>
 
 ## What the dial does
