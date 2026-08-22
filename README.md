@@ -34,7 +34,7 @@ Behavior follows the frontmost app, no mode switching:
 Details worth knowing:
 
 - **Video seeking is fine-grained.** In Chrome the seek adjusts the page's `<video>` element directly, so a detent moves exactly `--step` seconds (default 5). Fast rotation coalesces into one smooth jump.
-- **Fullscreen means presenting.** A fullscreen page navigates as slides even when a slide embeds a video. Only a video that dominates the screen (an actual fullscreen player) keeps its video controls.
+- **Fullscreen means presenting.** A fullscreen page always navigates as slides, even when a slide embeds a video. To control a video with the dial, watch it in a normal window.
 - **Scrolling is smooth.** Detents feed a pixel budget that drains with an ease-out curve at 120Hz, posted as trackpad-style events under your pointer.
 - **Music keeps working.** In apps that are not a slide context, presses forward to Spotify or Music, so the dial stays a media remote while you work.
 

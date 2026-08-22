@@ -148,12 +148,10 @@ func runChromeJS(_ js: String, done: @escaping (String) -> Void) {
     }
 }
 
-// Fullscreen pages navigate as slides even if a slide embeds a video; only a
-// video dominating the viewport (fullscreen player) keeps video controls.
+// Fullscreen means presenting: slide navigation only, never video controls.
 func chromeGestureJS(action: String) -> String {
-    "(function(){var fs=document.fullscreenElement;var v=document.querySelector('video');"
-        + "var dom=false;if(v){var r=v.getBoundingClientRect();dom=r.width*r.height>=innerWidth*innerHeight*0.6};"
-        + "if(fs&&!(v&&dom)){return 'fs'};if(!v){return 'novid'};"
+    "(function(){if(document.fullscreenElement){return 'fs'};"
+        + "var v=document.querySelector('video');if(!v){return 'novid'};"
         + action
         + "return 'ok'})()"
 }
